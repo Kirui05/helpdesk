@@ -16,8 +16,21 @@ Template Name: Login Page
     <div class="input">
         <label for="Password">Password</label>
         <div class="icons">
-        <ion-icon name="lock-closed-outline"></ion-icon>
+            <ion-icon name="lock-closed-outline"></ion-icon>
             <input type="password" placeholder="Enter password">
         </div>
     </div>
+    <div>
+        <a href="">Forgot password?</a> <br>
+    </div>
+    <button>Login</button>
 </div>
+
+<style>
+    .form-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+</style>

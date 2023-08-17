@@ -34,4 +34,16 @@ Template Name: Sign-up Page
             <input type="password" placeholder="Enter password">
         </div>
     </div>
+    <button>Sign Up</button>
+    <div>
+    <p>Already have an account? <a href="http://localhost/helpdesk/login/">Login</a> </p>
+    </div>
 </div>
+
+<style>
+    .form-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+</style>
