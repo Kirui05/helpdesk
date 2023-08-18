@@ -11,4 +11,15 @@
     <?php wp_head(); ?>
 </head>
 
+<nav>
+<h2><a href="" style="text-decoration: none;"><span style="color: #007f5f; margin-left: 25px;">HELP</span><span style="color:#000;">DESK</span></a></h2>
+</nav>
 <body>
+
+<style>
+    nav{
+        height: 55px;
+        background-color: #fff;
+        padding: 5px;
+    }
+</style>

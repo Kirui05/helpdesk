@@ -4,8 +4,12 @@ Template Name: Login Page
 */
 ?>
 
+<?php get_header() ?>
+
 <div class="form-container">
+    <div class="form" >
     <h2>Login</h2>
+    <p>Don't have an account yet?<a href="http://localhost/helpdesk/">Sign Up</a></p>
     <div class="input">
         <label for="email address">Email address</label>
         <div class="icons">
@@ -24,13 +28,31 @@ Template Name: Login Page
         <a href="">Forgot password?</a> <br>
     </div>
     <button>Login</button>
+    </div>
 </div>
 
+<?php get_footer() ?>
+
 <style>
+    body {
+        background-color: #fafafa;
+    }
+
     .form-container {
         display: flex;
         flex-direction: column;
+        margin-top: 100px;
+        margin-bottom: 137px;
+        margin-left: 525px;
+        width: 300px;
+        background-color: #fff;
+    }
+
+    .form {
+        display: flex;
+        flex-direction: column;
         align-items: center;
+        gap: 15px;
 
     }
 </style>

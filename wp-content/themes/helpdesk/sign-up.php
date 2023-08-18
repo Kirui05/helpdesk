@@ -4,7 +4,10 @@ Template Name: Sign-up Page
 */
 ?>
 
+<?php get_header()?>
+
 <div class="form-container">
+    <div class="form" >
     <h2>Sign Up</h2>
     <div class="input">
         <label for="fullname">Full name</label>
@@ -36,14 +39,32 @@ Template Name: Sign-up Page
     </div>
     <button>Sign Up</button>
     <div>
-    <p>Already have an account? <a href="http://localhost/helpdesk/login/">Login</a> </p>
+        <p>Already have an account? <a href="<?php echo site_url('/login') ?>">Login</a> </p>
+    </div>
     </div>
 </div>
 
+<?php get_footer()?>
+
 <style>
-    .form-container{
+    body {
+        background-color: #fafafa;
+    }
+
+    .form-container {
         display: flex;
         flex-direction: column;
-        align-items: center;
+        margin-top: 80px;
+        margin-left: 525px;
+        width: 300px;
+        background-color: #fff;
+    }
+
+    .form {
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ gap: 15px;
+
     }
 </style>
