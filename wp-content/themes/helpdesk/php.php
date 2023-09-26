@@ -54,12 +54,31 @@
 
     <!-- form in php -->
     <form action="php.php" method="get">
-        Name: <br> <input type="text" name="name"> <br>
+        Name: <br> <input type="text" name="name" placeholder="Enter name"> <br>
         <input type="submit">
     </form>
-    <br> 
-
+    <form action="php.php" method="get">
+        Age: <br> <input type="number" name="age" placeholder="Enter age"> <br>
+        <input type="submit">
+    </form>
+    <form action="php.php" method="post">
+        Password: <br> <input type="password" name="password" placeholder="Enter password"> <br>
+        <input type="submit">
+    </form>
+    <br>
     <?php echo $_GET["name"] ?>
+    <?php echo $_GET["age"] ?>
+    <?php echo $_POST["password"] ?>
+
+    <!-- arrays -->
+    <?php
+    $friends = array("kevin", "karen", "oscar", "jimmy");
+    $friends[0] = "nicholas";
+    $friends[4] = "angela";
+    echo $friends[3]; 
+    echo count($friends);
+    ?>
 
 </body>
+
 </html>
